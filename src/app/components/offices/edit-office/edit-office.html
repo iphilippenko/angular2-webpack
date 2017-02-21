@@ -1,0 +1,62 @@
+<div class="office-view office-edit">
+    <form>
+        <div class="office-address__edit">
+            <div class="form-group">
+                <label for="countries" class="control-label">*Country: </label>
+                <input list="countries" class="form-control" id="countries"/>
+                <datalist>
+                    <option value="United Arab Emirates" class="select-option">United Arab Emirates</option>
+                    <option value="United Kingdom" class="select-option">United Kingdom</option>
+                    <option value="United States" class="select-option">United States</option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="state" class="control-label">*State/Province: </label>
+                <input class="form-control" type="text" placeholder="state" id="state"/>
+            </div>
+            <div class="form-group">
+                <label for="post" class="control-label">*Postal Code: </label>
+                <input class="form-control" type="text" placeholder="postal code" id="post"/>
+            </div>
+            <div class="form-group">
+                <label for="city" class="control-label">*City: </label>
+                <input list="cities" class="form-control" id="city"/>
+                <datalist id="cities">
+                    <option value="Dubai" class="select-option">Dubai</option>
+                    <option value="Abu Dhabi" class="select-option">Abu Dhabi</option>
+                    <option value="Sharjah" class="select-option">Sharjah</option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="street" class="control-label">*Street Address: </label>
+                <input class="form-control" type="text" placeholder="street" id="street"/>
+            </div>
+            <div class="form-group">
+                <label for="address2" class="control-label">Address 2: </label>
+                <input class="form-control" type="text" id="address2"/>
+            </div>
+        </div>
+        <div class="office-contacts office-contacts__edit">
+            <div class="form-group">
+                <label for="phone" class="control-label">Phone: </label>
+                <input class="form-control" type="text" id="phone"/>
+            </div>
+            <div class="form-group">
+                <label for="fax" class="control-label">Fax: </label>
+                <input class="form-control" type="text" id="fax"/>
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label">Email: </label>
+                <input class="form-control" id="email" type="text"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Office Type:</label>
+                <p class="primary-hq__checkbox"><img src="./img/check-box.svg" class="check-box"/>Primary HQ</p>
+            </div>
+        </div>
+        <div class="office-control">
+            <button type="button" class="button button__cancel" (click)="cancelEditing()">Cancel</button>
+            <button type="button" class="button button__secondary">Save</button>
+        </div>
+    </form>
+</div>

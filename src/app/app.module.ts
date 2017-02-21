@@ -4,24 +4,24 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
+import {StaticModule} from "./components/static/static.module";
+import {ContentModule} from "./components/content/content.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    routing
+    routing,
+    StaticModule,
+    ContentModule
   ],
   declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent
+    AppComponent
   ],
   providers: [
     ApiService

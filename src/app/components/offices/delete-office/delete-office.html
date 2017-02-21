@@ -1,0 +1,30 @@
+<div class="popup">
+    <div class="static-modal popup-content">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title">Please tell us why you’re removing this record.</div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="removed-why form-group">
+                        <input list="removed__select" class="removed-why__select"/>
+                        <datalist id="removed__select">
+                            <option value="Former Record" class="select-option">Former Record</option>
+                            <option value="Duplicate Record" class="select-option">Duplicate Record</option>
+                            <option value="Record never Existed" class="select-option">Record never Existed</option>
+                            <option value="Other">Other</option>
+                        </datalist>
+                    </div>
+                    <div class="removed-why form-group">
+                        <label class="removed-why__notes_label control-label">Notes:</label>
+                        <textarea class="removed-why__notes"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="button button__cancel" (click)="cancelDeleting()">Cancel</button>
+                <button class="button button__remove button__secondary">Remove record</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+p, button, a, li {
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.button {
+    padding: 5px 16px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button__primary {
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    color: #53687e;
+}
+
+.button:hover {
+    box-shadow: 0 0 3px 0 rgba(83,104,126,0.67);
+}
+
+.button__primary:hover {
+    background-color: #53687e;
+    border: solid 1px #d6d6d6;
+    color: #ffffff;
+}
+
+.button__add {
+    padding: 9px 16px;
+}
+
+.offices-content {
+    float: right;
+    display: inline-block;
+    padding: 41px 62px;
+    background: #fff;
+}
+.offices-info {
+    margin-bottom: 40px;
+    padding: 36px 0;
+    border-bottom: dotted 1px #b7bdc5;
+    border-top: dotted 1px #b7bdc5;
+}
+.offices__amount {
+    float: right;
+    position: relative;
+    top: 8px;
+}

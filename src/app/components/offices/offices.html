@@ -1,0 +1,12 @@
+<div class="offices-info">
+    <button type="button" class="button button__add button__primary" (click)="toggleAdd(true)">Add new office</button>
+    <p class="offices__amount">3 Offices</p>
+
+    <template [ngIf]="addMode">
+      <add-office (cancel)="cancelAdding()"></add-office>
+    </template>
+
+    <div *ngFor="let office of offices">
+        <office-view [office]="office"></office-view>
+    </div>
+</div>

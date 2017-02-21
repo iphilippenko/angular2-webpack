@@ -1,0 +1,33 @@
+<div class="offices-content">
+  <template [ngIf]="deleteMode">
+    <delete-office (cancel)="cancelDeleting()"></delete-office>
+  </template>
+
+  <template [ngIf]="editMode">
+    <edit-office (cancel)="cancelEditing()"></edit-office>
+  </template>
+
+    <div class="office-view">
+        <div class="office-address">
+            <p class="office-address__label">Address:</p>
+            <p class="office-address__info">
+                <template [ngIf]="office.primaryHQ">
+                <span class="primary-hq"><img src="./img/check-mark.svg" class="check-mark check-mark__primary"/>Primary HQ<br/>
+                </span>
+                </template>
+                {{office.street}} <br/> {{office.city}},<br/>
+                {{office.state}} {{office.postalCode}} <br/> {{office.country}}</p>
+        </div>
+        <div class="office-contacts">
+            <template [ngIf]="office.phone"><p class="office-phone__label">Phone: <span class="office-phone">{{office.phone}}</span></p></template>
+            <template [ngIf]="office.fax"><p class="office-fax__label">Fax: <span class="office-fax">{{office.fax}}</span></p></template>
+            <template [ngIf]="office.email"><p class="office-email__label">Email: <span class="office-email">{{office.email}}</span></p></template>
+        </div>
+        <div class="office-control">
+            <button class="button button__remove" (click)="toggleDelete(true)">Remove</button>
+            <button class="button button__secondary" (click)="toggleEdit(true)">Edit</button>
+        </div>
+    </div>
+</div>
+
+

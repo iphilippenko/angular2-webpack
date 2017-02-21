@@ -1,0 +1,111 @@
+p, button, a, li {
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.office-address__label,
+.office-contacts,
+.office-address,
+.office-address__info,
+.office-control {
+    display: inline-block;
+}
+.office-address__label {
+    vertical-align: top;
+}
+.office-address__info {
+    margin-left: 17px;
+    width: 203px;
+}
+.office-contacts {
+    margin-left: 64px;
+    vertical-align: top;
+}
+.office-control {
+    float: right;
+    margin-left: 93px;
+    vertical-align: top;
+}
+.office-view {
+    margin-top: 16px;
+    padding: 13px 33px;
+    border-radius: 2px;
+    border: solid 1px #d7dce2;
+}
+p {
+    line-height: 1.14;
+    color: #53687e;
+    text-align: left;
+}
+.button__secondary {
+    margin-left: 10px;
+}
+.is-exist {
+    display: none;
+}
+.primary-hq {
+    font-weight: bold;
+    color: #000;
+}
+.check-mark__primary {
+    margin-left: 0;
+}
+
+.check-mark {
+    width: 14px;
+    height: auto;
+}
+
+.button {
+    padding: 5px 16px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    box-shadow: 0 0 3px 0 rgba(83,104,126,0.67);
+}
+
+.button__primary {
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    color: #53687e;
+}
+
+
+.button__primary:hover {
+    background-color: #53687e;
+    border: solid 1px #d6d6d6;
+    color: #ffffff;
+}
+
+
+.button__secondary {
+    background-color: #2888d1;
+    border: 1px solid #2888d1;
+    color: #ffffff;
+}
+
+.button__secondary:hover {
+    background-color: #ffffff;
+    border: 1px solid #2888d1;
+    color: #2888d1;
+}
+
+.button__remove {
+    border-radius: 2px;
+    background-color: #f7f8fa;
+    border: solid 1px #d8dde3;
+    color: #53687e;
+}
+
+.button__remove:hover {
+    background-color: #53687e;
+    border: solid 1px #d8dde3;
+    color: #f7f8fa;
+}
+

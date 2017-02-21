@@ -1,0 +1,113 @@
+p, button, a, li {
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.office-edit {
+    padding-left: 0;
+}
+.form-control {
+    width: 191px;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: solid 1px #d8dde3;
+    background-color: #f7f8fa;
+}
+p, label {
+    line-height: 1.14;
+    color: #334152;
+}
+
+.office-view {
+    margin-top: 16px;
+    padding: 13px 33px;
+    border-radius: 2px;
+    border: solid 1px #d7dce2;
+}
+
+.office-contacts {
+    margin-left: 64px;
+    vertical-align: top;
+}
+.office-control {
+    float: right;
+    margin-left: 93px;
+    vertical-align: top;
+}
+
+.form-group {
+    clear:both;
+    text-align:right;
+    margin-bottom: 8px;
+}
+.control-label {
+    float:left;
+    margin: 0 13px;
+    line-height: 30px;
+    color: #53687e;
+}
+.office-address__edit,
+.office-contacts__edit {
+    float:left
+}
+form {
+    overflow: hidden;
+}
+.select-option {
+    color: #334152;
+    background: #f7f8fa;
+    border: solid 1px #2477b3;
+}
+.select-option:hover {
+    color: #fff;
+    background-color: #2888d1;
+}
+.check-box {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.primary-hq__checkbox {
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+.button {
+    padding: 5px 16px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    box-shadow: 0 0 3px 0 rgba(83,104,126,0.67);
+}
+
+.button__secondary {
+    background-color: #2888d1;
+    border: 1px solid #2888d1;
+    color: #ffffff;
+}
+
+.button__secondary:hover {
+    background-color: #ffffff;
+    border: 1px solid #2888d1;
+    color: #2888d1;
+}
+
+.button__cancel {
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #53687e;
+    color: #53687e;
+}
+
+.button__cancel:hover {
+    background-color: #53687e;
+    border: solid 1px #53687e;
+    color: #ffffff;
+}

@@ -1,0 +1,28 @@
+p, button, a, li, h1, span, h2 {
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.content-subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1.47;
+    letter-spacing: 2px;
+    color: #b7bdc4;
+}
+
+.content-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 32px;;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #53687e;
+}
+
+.title {
+    margin-bottom: 20px;
+}
